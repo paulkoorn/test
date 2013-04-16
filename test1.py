@@ -6,6 +6,7 @@ from quick2wire.gpio import pins, Out, In
 button = pins.pin(0, direction=In)
 led = pins.pin(1, direction=Out)
 
+### main function
 with button, led:
     while True:
 	if button.value == 1:
